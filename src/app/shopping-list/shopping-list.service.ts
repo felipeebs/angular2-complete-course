@@ -10,5 +10,6 @@ export class ShoppingListService {
 
   addItems(items: Ingredient[]) {
     Array.prototype.push.apply(this.items, items)
+    console.log('Added', items.length)
   }
 }
