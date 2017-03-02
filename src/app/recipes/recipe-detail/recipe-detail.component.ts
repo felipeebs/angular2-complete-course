@@ -13,7 +13,6 @@ export class RecipeDetailComponent {
   constructor(private sls: ShoppingListService) {}
 
   onAddToShoppingList() {
-    console.log('Adding', this.selectedRecipe.ingredients)
     this.sls.addItems(this.selectedRecipe.ingredients)
   }
 }
