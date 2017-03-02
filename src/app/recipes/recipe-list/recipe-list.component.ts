@@ -8,8 +8,8 @@ import { Recipe } from "../recipe";
 })
 export class RecipeListComponent {
   recipes: Recipe[] = [
-    new Recipe('Dummy1', 'Dummy1 description', 'https://static.thenib.com/usq/1d97429f-4a64-4d52-bfdb-c36172c05228/this-is-not-fine-001-dae9d5.png', []),
-    new Recipe('Dummy2', 'Dummy2 description', 'https://static.thenib.com/usq/1d97429f-4a64-4d52-bfdb-c36172c05228/this-is-not-fine-001-dae9d5.png', [])
+    new Recipe('Schnitzel', 'Very tasty', 'https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Wiener-Schnitzel02.jpg/300px-Wiener-Schnitzel02.jpg', []),
+    new Recipe('Summer Salad', 'Okayish', 'http://ohmyveggies.com/wp-content/uploads/2013/06/the_perfect_summer_salad.jpg', [])
   ]
   @Output() recipeSelected = new EventEmitter<Recipe>()
 
